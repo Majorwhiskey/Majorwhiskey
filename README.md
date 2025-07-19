@@ -1,10 +1,9 @@
-- 👋 Hi, I’m @Majorwhiskey
-- 👀 I’m interested in Cybersecuriy
-- 🌱 I’m currently learning N-maping
-- 💞️ I’m looking to collaborate on Pen-testing
-- 📫 How to reach me just call if offline
-- 😄 Pronouns: He/Him
-- ⚡ Fun fact: I play good chess
+# 👋 Hi, I'm Amogh Ukkadgatri
+
+🎓 Electronics and Communication Engineering  
+🏫 KLE Institute of Technology, Hubli  
+🔍 Interested in Embedded Systems, Signal Processing, and AI-Hardware Integration
+
 
 
 <!---
