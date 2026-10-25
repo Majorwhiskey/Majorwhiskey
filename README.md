@@ -1,7 +1,4 @@
 ![Amogh Ukkadgatri. Embedded hardware and RF engineer, Bengaluru.](https://github.com/Majorwhiskey/Majorwhiskey/raw/main/assets/header.svg)
-# Amogh Ukkadgatri
-
-Electronics engineer. I build small sensing hardware for defence (microphone arrays, GNSS receivers, LoRa trackers) and the firmware and signal processing that run on it.
 
 [Portfolio](https://amoghukkadgatri.vercel.app)  ·  [LinkedIn](https://www.linkedin.com/in/YOUR-LINKEDIN)  ·  amoghukkadgatri@gmail.com
 
