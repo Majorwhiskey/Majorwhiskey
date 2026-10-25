@@ -1,63 +1,43 @@
-<h1 align="center">Hi, I'm Amogh Ukkadgatri 👋</h1>
+# Amogh Ukkadgatri
 
-<p align="center">
-  <b>Electronics & Communication Engineer · Embedded systems · GNSS, RF & acoustic sensing for defence</b>
-</p>
+Electronics engineer. I build small sensing hardware for defence (microphone arrays, GNSS receivers, LoRa trackers) and the firmware and signal processing that run on it.
 
-<p align="center">
-  <a href="https://amoghukkadgatri.vercel.app"><img src="https://img.shields.io/badge/Portfolio-amoghukkadgatri.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"></a>
-  <!-- Replace YOUR-LINKEDIN and YOUR-EMAIL below -->
-  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:YOUR-EMAIL"><img src="https://img.shields.io/badge/Email-Say%20hi-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
-</p>
+[Portfolio](https://amoghukkadgatri.vercel.app)  ·  [LinkedIn](https://www.linkedin.com/in/YOUR-LINKEDIN)  ·  amoghukkadgatri@gmail.com
 
----
+## Now
 
-### 🛰️ About me
+**Hardware Engineer, SSS Defence.** Acoustic counter-UAS. I own the sensing hardware, from microphone arrays and capture firmware to the rigs that qualify them. I'm also on the team syncing packets, data and clocks across multiple arrays so their captures line up for joint processing. *Work is private.*
 
-I build small, low-cost hardware that watches the sky and listens to the world: GNSS loggers, LoRa trackers, microphone arrays and radar trackers. My work sits where PCB design, firmware and signal processing meet, mostly aimed at defence problems like counter-UAS and GNSS jamming and spoofing.
+**Building [GNSS-GUARD](https://github.com/Majorwhiskey/GNSS-GUARD).** A low-cost GPS jamming and spoofing detector. I'm collecting data now. Next is a small int8 model that runs on the ESP32 itself.
 
-- 🔭 **Now:** building **GNSS-GUARD**, an on-device GPS jamming & spoofing detector
-- 📐 **Recently:** designed **Theoros**, a 4-layer ESP32-S3 GPS + LoRa tracker in KiCad 10
-- 🎙️ **Into:** acoustic C-UAS, direction-of-arrival estimation, state estimation, TinyML on microcontrollers
-<!-- - 🎓 **Education:** B.E./B.Tech in ECE, [College], [Year] -->
-<!-- - 💼 **Experience:** [Role] at [Organisation], [what you worked on] -->
+**Finished [Theoros](https://github.com/Majorwhiskey/gps-lora).** An encrypted GPS logger and LoRa tracker. The V1.0 board and firmware are done and ready for fabrication.
 
----
+## Work
 
-### 🔧 Featured projects
+**GNSS and RF**
 
-| Project | What it does | Built with |
-|---|---|---|
-| [**GNSS-GUARD**](https://github.com/Majorwhiskey/GNSS-GUARD)<br>🚧 *data collection* | Low-cost GPS jamming & spoofing detector. A u-blox NEO-M8L with a built-in IMU streams UBX to an ESP32. A per-second feature pipeline (C/N0 vs elevation, clock jumps, GNSS heading vs gyro, AGC and jamming indicators) feeds a small int8 model that will run on the ESP32 itself. Receive-only by design. | ESP32 · u-blox UBX · Python · TinyML |
-| [**Theoros** (gps-lora)](https://github.com/Majorwhiskey/gps-lora)<br>📐 *V1.0 design complete* | USB-C GPS logger and LoRa tracker. Logs 1 Hz u-blox M10 fixes to microSD, shows status on an OLED, and sends AES-128-CCM encrypted position over sub-GHz LoRa. WiFi handles NTP, log download and OTA. 4-layer, fully machine-assembled board with fab outputs and tracker/receiver firmware. Named after the Greek *theoros*, an observer sent to watch and report back. | ESP32-S3 · KiCad 10 · RFM95W (SX1276) · Arduino |
-| [**Radar Tracking & Classification**](https://github.com/Majorwhiskey/Real-time-3D-radar-tracking-and-classification-system) | Tracks simulated radar targets through noisy measurements with Kalman and particle filters, classifies their motion with SVMs, and plots true, noisy and estimated trajectories live. | Python · Kalman & particle filters · SVM |
-| [**3D Acoustic Localization**](https://github.com/Majorwhiskey/3-d-Acoustic-Localization-using-Microphone-array-and-AI-) | Sound-source localization with a microphone array on a Raspberry Pi: filtering, DOA estimation, triangulation and visualization. | Python · Jupyter · Raspberry Pi · ReSpeaker |
-| [**Portfolio**](https://github.com/Majorwhiskey/Portfolio) | Single static page with hand-coded canvas animations: a self-routing circuit in the hero and a dot field that spells words as you scroll. No framework, no build step. | HTML · CSS · JavaScript · Canvas · Vercel |
-| [**Aroodha Foundation**](https://github.com/Majorwhiskey/Aroodha-Foundation) | Multi-page website for a foundation covering programs, events, online sessions and donations. | HTML · Tailwind CSS |
+- [**GNSS-GUARD**](https://github.com/Majorwhiskey/GNSS-GUARD): a u-blox NEO-M8L and an ESP32 that check every second for jamming and spoofing. They compare signal strength with satellite elevation, watch for clock jumps, and compare GNSS heading with the gyro. Receive-only by design.
+- [**Theoros**](https://github.com/Majorwhiskey/gps-lora): a 4-layer ESP32-S3 board that logs GPS fixes to microSD and sends position over LoRa, encrypted with AES-128-CCM. Designed in KiCad for machine assembly.
 
----
+**Acoustic sensing**
 
-### 🧰 Toolbox
+- [**3D Acoustic Localization**](https://github.com/Majorwhiskey/3-d-Acoustic-Localization-using-Microphone-array-and-AI-): finds where a sound comes from in 3D with a mic array on a Raspberry Pi, using DOA estimation and triangulation. My final-year project, and how I got into C-UAS.
+- **Mic-array test rig**: qualifies custom microphone arrays over ESP32 I2S. It moves to TDM capture to get past the classic ESP32's single-RX-channel limit. *· at SSS Defence, private*
 
-**Hardware & RF**
+**Tracking and estimation**
 
-![ESP32-S3](https://img.shields.io/badge/ESP32--S3-E7352C?style=flat-square&logo=espressif&logoColor=white)
-![KiCad](https://img.shields.io/badge/KiCad%2010-314CB0?style=flat-square&logo=kicad&logoColor=white)
-![LoRa](https://img.shields.io/badge/LoRa-SX1276-1C75BC?style=flat-square)
-![u-blox](https://img.shields.io/badge/u--blox-GNSS%20%2F%20UBX-A41E35?style=flat-square)
-![PCB](https://img.shields.io/badge/PCB-4--layer%20%C2%B7%20impedance%20controlled-2E7D32?style=flat-square)
+- [**Radar Tracking & Classification**](https://github.com/Majorwhiskey/Real-time-3D-radar-tracking-and-classification-system): follows simulated radar targets through noisy measurements with Kalman and particle filters, classifies their motion with SVMs, and plots the tracks live.
 
-**Languages & tools**
+## Also built
 
-<img src="https://skillicons.dev/icons?i=python,cpp,arduino,raspberrypi,linux,git,html,css,js,tailwind,vercel" alt="Tech stack" />
+[Portfolio](https://github.com/Majorwhiskey/Portfolio), one static page with hand-coded canvas animations and no framework · [Aroodha Foundation](https://github.com/Majorwhiskey/Aroodha-Foundation), a website for a foundation's programs, events and donations
 
-**Signal processing & ML**
+## Background
 
-Kalman & particle filters · DOA estimation · feature engineering on GNSS data · SVMs · gradient-boosted trees · autoencoders · int8 on-device inference
+B.E., Electronics & Communication, KLE Institute of Technology, 2026 · Chair, KLEIT–IEEE MTT-S Chapter, 2024–25 · Vice-Chair, KLEIT–IEEE Student Branch, 2023–24 · theatre with the university cultural group
 
----
+## Tools
 
-<p align="center">
-  <i>If you work on GNSS integrity, counter-UAS or embedded RF, I'd love to talk.</i>
-</p>
+C · C++ · Python · MATLAB · ESP32 / ESP32-S3 · Raspberry Pi · KiCad · LoRa · u-blox UBX · I2S / PDM / TDM audio · Kalman and particle filters · DOA estimation · TinyML · Linux
+
+*If you work on GNSS integrity, counter-UAS or embedded RF, I'd love to talk.*
