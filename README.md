@@ -1,6 +1,6 @@
 ![Amogh Ukkadgatri. Embedded hardware and RF engineer, Bengaluru.](https://github.com/Majorwhiskey/Majorwhiskey/raw/main/assets/header.svg)
 
-[Portfolio](https://amoghukkadgatri.vercel.app)  ·  [LinkedIn](https://www.linkedin.com/in/YOUR-LINKEDIN)  ·  amoghukkadgatri@gmail.com
+[Portfolio](https://amoghukkadgatri.vercel.app)  ·  [LinkedIn](https://www.linkedin.com/in/amogh-ukkadgatri/)  ·  amoghukkadgatri@gmail.com
 
 ## Now
 
