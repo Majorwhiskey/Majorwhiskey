@@ -1,4 +1,4 @@
-![Amogh Ukkadgatri. Embedded hardware and RF engineer, Bengaluru.](https://github.com/Majorwhiskey/Majorwhiskey/raw/main/assets/header.svg)
+![Amogh Ukkadgatri. Embedded hardware and RF engineer, Bengaluru. Acoustic C-UAS, GNSS integrity, and hardware tooling for AI agents.](https://github.com/Majorwhiskey/Majorwhiskey/raw/main/assets/header.svg)
 
 [Portfolio](https://amoghukkadgatri.vercel.app)  ·  [LinkedIn](https://www.linkedin.com/in/amogh-ukkadgatri/)  ·  amoghukkadgatri@gmail.com
 
